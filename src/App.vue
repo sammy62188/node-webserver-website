@@ -6,7 +6,7 @@
       <b-col sm="6" offset="3"><QuestionBox
       :currentQuestion="questions[index]"
       :next="next"
-      /></b-col>
+      /></b-col><am coming/>
     </b-row>
 </b-container>
   </div>
