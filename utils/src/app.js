@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./geocode')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // set the path to the views and partial
 
@@ -57,6 +58,6 @@ app.get('*', (req, res)=>{
 })
 
 
-app.listen(3000, ()=>{
-    console.log('starting the application')
+app.listen(port, ()=>{
+    console.log('starting the application on port ' + port)
 })
